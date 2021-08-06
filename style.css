@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIM DO RESET */
+
+body{
+    height: 100vh;
+    background-color:#FAD6C2;
+    background-image: url(guardasois/beachbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+/* 
+header{
+    height: 350px;
+} */
+.pop-up{
+    padding: 30px;
+    width: 80vw;
+    height: 400px;
+    color: rgb(255, 248, 233);
+    background-color: rgb(57, 155, 201);
+    border-radius: 15px;
+    border: 3px solid rgb(255, 127, 42);
+    box-shadow: 0px 0px 8px 3px rgba(255,255,255,0.75);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.vitoria{
+
+justify-content: space-evenly;
+align-items: center;
+}
+.vitoria p{
+    font-size: 25px;
+    line-height: 40px;
+}
+.buttonAction {
+    align-self: flex-end;
+}
+
+#pop-up1 img{
+    height: 300px;  
+}
+
+h1{
+    font-size: 25px;
+    margin: 0 10px;
+    font-weight: bolder;
+}
+
+p{
+    width: 65%;
+    text-align: start;
+    line-height: 25px;
+    font-size: 16px;
+    margin: 0 10px;
+    font-weight: bold;
+    
+}
+
+button{
+    margin: 10px;
+    background-color: rgb(255, 127, 42);
+    border-radius: 7px;
+    border:2px solid rgb(255, 248, 233);
+    padding: 10px;
+font-weight: bolder;
+    color: rgb(255, 248, 233);
+}
+.hidden {
+    display: none;
+}
+
+#areaLabirinto{
+    margin: 250px 100px 0;
+    padding-bottom: 100px;
+    width: 735px;
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+
+.parede {
+    width: 35px;
+    height: 35px;
+    /* background-color: darkgreen; */
+}
+.parede img{
+    width: 35px;
+    height: 35px;
+}
+
+.espaco {
+    width: 35px;
+    height: 35px;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+#jogador {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(54 17 1 / 56%);
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+#jogador figure{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#jogador figure img{
+    
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+#seta {
+    transform: translate(-110%, -30%);
+}
+#seta img{
+    height: 75px;
+}
+#fim img{
+    height: 100px;
+}
+
+.direita{
+    transform: scaleX(-1);
+}
+.esquerda{
+    transform: scaleX(1);
+}
+
+.direcao1{
+    transform: rotate(0deg);
+}
+.direcao2{
+    transform: rotate(45deg);
+}
+.direcao2{
+    transform: rotate(60deg);
+}
+.direcao4{
+    transform: rotate(80deg);
+}
+
+.fim {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(85, 133, 235);
+}
