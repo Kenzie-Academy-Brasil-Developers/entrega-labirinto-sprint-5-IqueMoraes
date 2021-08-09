@@ -44,7 +44,7 @@ function estrutura(x){
     const bloco = document.createElement('div')
     bloco.setAttribute("class", x)
     if(x === "parede"){
-        const coresParedes = ["guardasois/amarelo.png", "guardasois/azul.png", "guardasois/colorido.png","guardasois/laranja.png","guardasois/verdeclaro.png","/guardasois/vermelho.png" ];
+        const coresParedes = ["guardasois/amarelo.png", "guardasois/azul.png", "guardasois/colorido.png","guardasois/laranja.png","guardasois/verdeclaro.png","guardasois/vermelho.png" ];
         const rotacaoParede = ["direcao1","direcao2","direcao3","direcao4"];
         const figure = document.createElement('figure')
         const img = document.createElement('img')
@@ -69,7 +69,7 @@ function criaJogador(){
                 jogador.id = "jogador"
     const figure = document.createElement('figure')
     const img = document.createElement('img')
-                img.setAttribute("src", "/guardasois/pato.png")
+                img.setAttribute("src", "guardasois/pato.png")
                 figure.appendChild(img)
                 jogador.appendChild(figure)
                 labirinto.appendChild(jogador)
@@ -81,7 +81,7 @@ function criaSeta(linha, coluna){
                 seta.id = "seta"
     const figure = document.createElement('figure')
     const img = document.createElement('img')
-                img.setAttribute("src", "/guardasois/clipart2648132.png")
+                img.setAttribute("src", "guardasois/seta.png")
                 figure.appendChild(img)
                 seta.appendChild(figure)
                 labirinto.appendChild(seta)
@@ -95,7 +95,7 @@ function criaFim(){
                 fim.id = "fim"
     const figure = document.createElement('figure')
     const img = document.createElement('img')
-                img.setAttribute("src", "/guardasois/cerveja.png")
+                img.setAttribute("src", "guardasois/cerveja.png")
                 figure.appendChild(img)
                 fim.appendChild(figure)
                 labirinto.appendChild(fim)
